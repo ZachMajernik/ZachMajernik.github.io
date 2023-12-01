@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+
+    <link rel="stylesheet" type="text/css" href="FP_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&Nunito&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="animBackground"></div>
+    
+    <div>
+        <div class="head">
+            <h1>My Question</h1>
+            <h3>
+                Which popular fast food restaurant is the best for your diet type?
+            </h3>
+        </div>
+
+        <div>
+            <p>
+                I looked at the nutrition facts of the menu for eight of the most popular fast food chains to determine which ones are the best for a few of the most popular diet types:
+                low calorie, low sodium, high protein, low fat, and low carbs.
+            </p>
+        </div>
+
+        <div class="head">
+            <h1>My Data</h1>
+            <h3 id="cycleText">--Cycling restaurant names--</h3>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    There are Thousands upon thousands of fast food restaurants in just the U.S. alone!
+                    With all these choices it can be very hard to figure out where to eat and even harder which ones have the best options for you.
+                    The graph below shows how many there are (in the U.S.) of each restaurant we will be looking at.
+                </p>
+                <p>
+                    I used a dataset made by <a href="https://www.openintro.org/data/index.php?data=fastfood" target="_blank">openintro.org</a> that contains almost the entire menue
+                    (not including some sides like fries) from eight different fast food chains:<br />
+                    Taco Bell, Subway, Burger King, Mcdonalds, Arby's, Sonic, Dairy Queen, Chick Fil-A.<br />
+                    I also cross-referenced some of the items from the dataset with the nutrition facts from that restaurant's official website to confirm legitamacy.
+                </p>
+            </div>
+            <div id="d3-container"></div>
+        </div>
+
+        <div class="head">
+            <h1>My Analysis</h1>
+        </div>
+
+        <div>
+            <p>
+                Taco Bell is the best option for a low sodium diet as it has the lowest median sodium for all of its items at 960 mg,
+                but Dairy Queen has the lowest sodium option of all eight restaurants being it's side salad at 15 mg of sodium.
+            </p>
+            <p>
+                Chick-Fil-A is the best option for a low calorie diet as it has the lowest median calories for all of its items at 390 cal,
+                but Dairy Queen has the lowest calorie option of all eight restaurants being it's side salad at 20 cal.
+            </p>
+            <p>
+                McDonalds is hands down the best option for a high protein diet with both the highest median protein count in its items at 33 g
+                and the highest protein count in an item being its 20 piece Buttermilk Crispy Chicken Tenders at a whopping 186 g of protein!
+            </p>
+            <p>
+                Chick-Fil-A is the best option for a low fat diet as it has the lowest median amount of fat for all of its items at 14 g,
+                but Dairy Queen has the lowest fat option of all eight restaurants being it's side salad at 0 g of fat.
+            </p>
+            <p>
+                Chick-Fil-A is the best option for a low carbs diet as it has the lowest median carbs for all of its items at 29 g,
+                but Dairy Queen has the lowest carb option of all eight restaurants being it's Regular Cheese Curds at 0 g of carbohydrates.
+            </p>
+        </div>
+
+        <div class="head">
+            <h1>My Visualizations</h1>
+        </div>
+
+        <div>
+            <p>
+                Here are the bar graphs showing the minimums, maximums, and medians (depending on the diet being examined) for the different restaurants' menus:
+            </p>
+            <img src="BarGraph1.PNG"><img src="BarGraph2.PNG">
+            <img src="BarGraph3.PNG"><img src="BarGraph4.PNG">
+            <center>
+                <img src="BarGraph5.PNG">
+            </center>
+        </div>
+
+        <div class="head">
+            <h1>My Answer</h1>
+        </div>
+
+        <div>
+            <p>
+                Chick-Fil-A and Dairy Queen seem to be the better options for most of the diet types, except for McDonalds which is far better for a high calorie diet.
+            </p>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="FP_script.js"></script>
+</body>
+</html>
